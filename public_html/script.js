@@ -4,7 +4,16 @@
  * and open the template in the editor.
  */
 
-$("document").ready(function(){
+$("document").ready(function(){ 
     $(".practice").css("background-color", "yellow");
     
+    $("p:nth-child(1)").css("background-color", "cyan");
+    
+    $("p:nth-child(2)").css("background-color", "red");
+    
+    $("p:nth-child(3)").css("background-color", "green");
+    
+    $("p:nth-child(4)").css("background-color", "gray");
+    
+    $('#oneButton').bind('click', alertButtonClick);
 });
