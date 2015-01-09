@@ -15,5 +15,25 @@ $("document").ready(function(){
     
     $("p:nth-child(4)").css("background-color", "gray");
     
-    $('#oneButton').bind('click', alertButtonClick);
+    
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+            
+    $('h1').bind('mouseover', mouseOverMe());
+    
+    $('h1').bind('click', mouseClick);
+
+    
 });
+
+function mouseOverMe(){
+    $("p").html("yahoo");
+}
+
+function mouseOutMe(){
+    $('h1').html('google');
+}
+
+function mouseClick(){
+    
+    $('p').html('sankjnnn[djaknjdnjasdnjsdakjdknda');
+}
