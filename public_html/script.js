@@ -21,7 +21,11 @@ $("document").ready(function(){
     $('h1').bind('mouseover', mouseOverMe());
     
     $('h1').bind('click', mouseClick);
-
+    
+    $('#replaceWHtml').bind('click', replaceWHtml);
+    $('#replaceWText').bind('click', replaceWText);
+    $('#addAPARA').bind('click', addAPara);
+    $('#removeAPara').bind('click', removeAPara);
     
 });
 
@@ -36,4 +40,20 @@ function mouseOutMe(){
 function mouseClick(){
     
     $('p').html('sankjnnn[djaknjdnjasdnjsdakjdknda');
+}
+
+function replaceWHtml(){
+    $('#h3Tag').html('<h6>Now I\'m an h6</h6');
+}
+
+function replaceWText(){
+    $('#h3Tag').text('<h6>Now I\'m an h6</h6>');
+}
+
+function addAPara(){
+    $('#randPara').append('<p>Another paragraph</p>');
+}
+
+function removeAPara(){
+    $('#randPara p:last').remove();
 }
