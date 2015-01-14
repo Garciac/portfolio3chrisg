@@ -28,6 +28,12 @@ $("document").ready(function(){
     
     $('#removePara').bind('click', removeAPara);
     
+    $('#hide').bind('click', hideThePage);
+    
+    $('#show').bind('click', showThePage);
+    
+    $('#show').bind('click', 'hidden');
+    
 });
 
 //function mouseOverMe(){
@@ -53,4 +59,17 @@ function addAPara(){
 
 function removeAPara(){
     $('#randPara p:last').remove();
+}
+
+function hideThePage(){
+    $('#show').css('visibility', 'visible');
+    
+    $('div').hide('slide', {}, 2500);
+    
+    $('#show').show('fold', {}, 2500);
+}
+
+function ShowThePage(){
+    $('div').show('fold', {}, 2500);
+    $('#show').hide('puff', {}, 2500);
 }
