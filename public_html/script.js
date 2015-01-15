@@ -7,6 +7,8 @@
 $("document").ready(function(){ 
     $(".practice").css("background-color", "yellow");
     
+    $('#superHumans').accordion({header: "h3"});
+    
     $("p:nth-child(1)").css("background-color", "cyan");
     
     $("p:nth-child(2)").css("background-color", "red");
