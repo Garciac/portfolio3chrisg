@@ -1,0 +1,34 @@
+/* grid border*/
+div {
+    border-style: none;
+    border-width: 5px;
+    border-color: green;
+    padding: 5px;
+}
+
+/* color for border */
+.container {
+    border-color: aqua;
+}
+
+/* color for border */
+.row {
+  border-color: yellow;
+}
+
+/* margin and border for links in box with colors on the link */
+.list-group-item {
+  border: 0;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+/* background image */
+body{
+    background-image: url(http://data3.whicdn.com/images/21330323/large.gif)
+}
+
+/* carousel margin */
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
