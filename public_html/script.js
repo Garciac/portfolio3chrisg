@@ -5,10 +5,13 @@
  */
 
 $("document").ready(function(){ 
+    // adds a yellow background for the sentence that has different colors
     $(".practice").css("background-color", "yellow");
     
+    // setttings for accordion in (superHumans)
     $('#superHumans').accordion({header: "h3"});
     
+    //adds color for each sentence 
     $("p:nth-child(1)").css("background-color", "cyan");
     
     $("p:nth-child(2)").css("background-color", "red");
@@ -18,18 +21,20 @@ $("document").ready(function(){
     $("p:nth-child(4)").css("background-color", "gray");
     
     
-//    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
-//            
-//    $('h1').bind('mouseover', mouseOverMe());
-//    
-//    $('h1').bind('click', mouseClick);
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseOut', mouseOutMe);
+            
+    $('h1').bind('mouseover', mouseOverMe());
     
+    $('h1').bind('click', mouseClick);
+    
+    // settings for (replaceWText),(randPara), and (removePara) to add, replace, or delete sentence
     $('#replaceWText').bind('click', replaceWText);
     
     $('#randPara').bind('click', addAPara);
     
     $('#removePara').bind('click', removeAPara);
     
+// these 3 are settings below is for the page to hide
     $('#hide').bind('click', hideThePage);
     
     $('#show').bind('click', showThePage);
@@ -38,18 +43,18 @@ $("document").ready(function(){
     
 });
 
-//function mouseOverMe(){
-//    $("p").html("yahoo");
-//}
-//
-//function mouseOutMe(){
-//    $('h1').html('google');
-//}
-//
-//function mouseClick(){
-//    
-//    $('p').html('sankjnnn[djaknjdnjasdnjsdakjdknda');
-//}
+function mouseOverMe(){
+    $("p").html("yahoo");
+}
+
+function mouseOutMe(){
+    $('h1').html('google');
+}
+
+function mouseClick(){
+    
+    $('p').html('sankjnnn[djaknjdnjasdnjsdakjdknda');
+}
 
 function replaceWText(){
     $('replaceWText').text('Replaced!');

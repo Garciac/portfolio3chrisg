@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>Jquery Test</title>
+        <title>jQuery</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
@@ -18,10 +18,12 @@ and open the template in the editor.
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
     </head>
     <body>
-        <!-- navbar -->
-        <div class="navbar navbar-inverse navbar-static-top">
+        <!-- navbar to navigate to other pages -->
+   
+        <div class="navbar transparent navbar-inverse ">
+            <div class="navbar-inner">
             <div class="container">
-                <a href="Index.html" class="navbar-brand">Jquery Test</a>
+                <a href="Index.html" class="navbar-brand">jQuery</a>
                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -32,41 +34,72 @@ and open the template in the editor.
 
                     <ul class="nav navbar-nav navbar-right">
 
-                        <li class="active"><a href="index.html">Jquery Test</a></li>
+                        <li class="active"><a href="index.html">jQuery</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="Projects.html">Projects</a></li>
                         <li><a href="Technologies.html">Technologies</a></li>
                     </ul>
 
                 </div>
+                </div>
             </div>
         </div>
-        
-         <audio controls>
-            <source src="Piece for Disaffected Piano One.mp3" type="audio/mpeg">
-        </audio>
-        <div class="practice">
-            <p>bla bla bla</p>            
-            <p>bla bla bla</p>           
-            <p>1</p>           
-            <p>3</p>
-            <p id="replaceWText">Blank</p>
-            <p id="removePara">Delete</p>
-            <p id="randPara">Add</p>
-            <p id="hide">hide</p>
-        </div>
-        
-        <div id="superHumans">
-            <h3>First</h3>  
-            <p>1st</p>
-            <h3>Second</h3>
-            <p>2nd</p>
-            <h3>Third</h3>
-            <p>3rd</p>
-            
-            
-        </div>
-        
-        <script type="text/javascript" src="script.js"></script>
+        <!--Music Player-->
+            <audio controls>
+                <source src="Piece for Disaffected Piano One.mp3" type="audio/mpeg">
+            </audio>
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-xs-10">
+
+                        <div class="row">
+                            <div class="practice">
+                                <!-- This changes after mouseover-->
+                                <p>bla bla bla</p>            
+                                <p>bla bla bla</p>           
+                                <p>1</p>           
+                                <p>3</p> 
+                                <!-- replaces the text to another thing -->
+                                <a id="replaceWText" class="btn btn-toolbar">Blank</a>
+                                <!-- deletes the sentence that was added-->
+                                <a id="removePara" class="btn btn-toolbar">Delete</a>
+                                <!-- adds new sentence-->
+                                <a id="randPara" class="btn btn-toolbar">Add</a>
+                                <!-- hides the page-->
+                                <a id="hide" class="btn btn-toolbar">Hide</a>
+                            </div>
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-9"></div>
+                        </div>
+                        <div class="row">
+                            <!-- accordion -->
+                            <div id="superHumans">
+                                <h3>First</h3>  
+                                <p>1st</p>
+                                <h3>Second</h3>
+                                <p>2nd</p>
+                                <h3>Third</h3>
+                                <p>3rd</p>
+                            </div>
+                            <div class="col-xs-3"></div>
+                            <div class="col-xs-9"></div>
+                        </div>         
+                    </div>         
+                    <div class="col-xs-2">
+                        <!-- These are links that take you to other pages. -->
+                        <div class="list-group">
+                            <a href="Index.html" class="list-group-item list-group-item-danger">jQuery</a>                   
+                            <a href="about.html" class="list-group-item list-group-item-success">About</a>
+                            <a href="Projects.html" class="list-group-item list-group-item-info">Projects</a>
+                            <a href="Technologies.html" class="list-group-item list-group-item-warning">Technologies</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script type="text/javascript" src="script.js"></script>
     </body>
 </html>
