@@ -1,6 +1,6 @@
 /* grid border*/
 div {
-    border-style: solid;
+    border-style: none;
     border-width: 5px;
     border-color: green;
     padding: 5px;
@@ -13,14 +13,14 @@ div {
 
 /* color for border */
 .row {
-  border-color: yellow;
+    border-color: yellow;
 }
 
 /* margin and border for links in box with colors on the link */
 .list-group-item {
-  border: 0;
-  margin: 5px;
-  margin-bottom: 20px;
+    border: 0;
+    margin: 5px;
+    margin-bottom: 20px;
 }
 
 /* background image */
