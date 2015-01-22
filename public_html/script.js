@@ -21,11 +21,11 @@ $("document").ready(function(){
     $("p:nth-child(4)").css("background-color", "gray");
     
     
-    $("h1").bind('mouseover', mouseOverMe).bind('mouseOut', mouseOutMe);
-            
-    $('h1').bind('mouseover', mouseOverMe());
-    
-    $('h1').bind('click', mouseClick);
+//    $("h1").bind('mouseover', mouseOverMe).bind('mouseOut', mouseOutMe);
+//            
+//    $('h1').bind('mouseover', mouseOverMe());
+//    
+//    $('h1').bind('click', mouseClick);
     
     // settings for (replaceWText),(randPara), and (removePara) to add, replace, or delete sentence
     $('#replaceWText').bind('click', replaceWText);
@@ -40,6 +40,24 @@ $("document").ready(function(){
     $('#show').bind('click', showThePage);
     
     $('#show').bind('click', 'hidden');
+    
+    //settings for animation
+    
+    $('#hideLogo').bind('click', hideTheImage);
+    $('#showLogo').bind('click', showTheImage);
+    $('#toggleText').bind('click', toggleTheText);
+    $('#fadeLogo').bind('click', fadeTheImage);
+    $('#fadeALittle').bind('click', fullALittle);
+    $('#fullOpacity').bind('click', fullOpacityImage);
+    $('#slideAway').bind('click', slideTheImage);
+    $('#slideBack').bind('click', unslideTheImage);
+    $('#customAnim').bind('click', customAnimate);
+    $('#shakeLogo').bind('click', shakeLogo);
+    $('#bounceLogo').bind('click', bounceLogo);
+    $('#highlightLogo').bind('click', highlightLogo);
+    $('#pulsateLogo').bind('click', pulsateLogo);
+    $('#sizeLogo').bind('click', sizeLogo);
+    
     
 });
 
@@ -80,3 +98,61 @@ function ShowThePage(){
     $('div').show('fold', {}, 2500);
     $('#show').hide('puff', {}, 2500);
 }
+
+function hideTheImage(){
+    $('#logo').hide('puff', {}, 2500);
+}
+
+function showTheImage(){
+    $('#logo').show('fold', {}, 2500);
+}
+
+function toggleTheText(){
+    $('h4').toggle(2500);
+}
+
+function fadeTheImage(){
+    $('#logo').fadeOut(2500);
+}
+
+function fadeALittle(){
+    $('#logo').fadeTo(2500, .30);
+}
+
+
+function fullOpacityImage(){
+    $('#logo').fadeTo(2500, 1);
+}
+
+function slideTheImage(){
+    $('#second').slideUp(2500);
+}
+
+function unslideTheImage(){
+    $('#second').slideDown(2500);
+}
+
+function customAnimate(){
+    $('#logo').animate({opacity: 0.25, height:'150px'}, 2000, 'swing');
+}
+
+function shakeLogo(){
+    $('#logo').effect('shake', {time: 5, direction: 'down', distance: 10}, 200);
+}
+
+function bounce(){
+    $('#logo').effect('bounce', {times: 5, direction:'down', distance: 10}, 200);
+}
+
+function highlightLogo(){
+    $('h3').effect('highlight', {color: 'purple'}, 500);
+}
+
+function pulsateLogo(){
+    $('#logo').effect('pulsate', {times: 5}, 200);
+}
+
+function sizeLogo(){
+    $('#logo').effect('size',{to: {height: 350, width:350}}, 200);
+}
+
